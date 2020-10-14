@@ -19,6 +19,10 @@ module "sns" {
     sub_1 = {
       protocol = "sms",
       endpoint = "+919660651780"
+    },
+    sub_2 = {
+      protocol = "sms"
+      endpoint = "+918078619608"
     }
   }
 }

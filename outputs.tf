@@ -8,7 +8,7 @@ output "sns_topic_arn" {
 output "sns_topic_subscription_arn" {
   value = {
     for x in aws_sns_topic_subscription.default:
-    x.topic_arn => x.arn
+    x.topic_arn => x.arn...
   }
   description = "The ARN of the subscription."
 }
@@ -16,7 +16,7 @@ output "sns_topic_subscription_arn" {
 output "sns_topic_subscription_protocol" {
   value = {
     for x in aws_sns_topic_subscription.default:
-    x.topic_arn => x.protocol
+    x.topic_arn => x.protocol...
   }
   description = "The protocol being used in subscription."
 }
